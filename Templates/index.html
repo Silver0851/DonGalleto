@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <!--Aqui debajo se importa Boostrap, para poder usar el framework se escribe con los corchetes-->
+    <!--Aqui debajo se importa Boostrap, para poder usar el framework. Se escribe entre doble corchetes y se
+    usa url_for('static',filename='ruta')-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
     <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
 
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #D2691E;">
+        <nav class="navbar navbar-expand-lg navbar-dark rounded-bottom" style="background-color: #D2691E; box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);" >
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Don Galleto</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +21,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#dashboard">Dashboard</a>
+                            <a class="nav-link active" aria-current="page" href="#dashboard">Dashboard</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#venta">Venta</a>
@@ -37,10 +38,26 @@
         </nav>
     </header>
     <main>
-        <p>Contenido principal aquí.</p>
+        <!--Este es el Dashboard donde se enseña un resumen de los modulos para que Don galleto tenga una vista
+        rapida de cosas como inventario, ventas, produccion.-->
+        <section id="venta">
+            <div class="container">
+                <h1>Venta</h1>
+            </div>
+        </section>
+        <section id="produccion">
+            <div class="container">
+                <h1>Producción</h1>
+            </div>
+        </section>
+        <section id="inventario">
+            <div class="container">
+                <h1>Inventario</h1>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Don Galleto. Todos los derechos reservados.</p>
+    <footer style="background-color: #A0522D; box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); border-radius: 10px 10px 0 0;">
+        <p style="color: white">&copy; 2023 Don Galleto. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

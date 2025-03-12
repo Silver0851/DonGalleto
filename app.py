@@ -13,4 +13,4 @@ def index():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True) # ◀ Se inicia el servidor en modo debug para poder ver los errores en tiempo real.
+    app.run(debug=True) # ◀ Se inicia el servidor en modo debug para poder ver los errores o cambios en tiempo real.
