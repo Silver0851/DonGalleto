@@ -10,7 +10,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('pages/exampleCRUD.html')
+
+@app.route("/alerts")
+def alerts():
+    return render_template('Examples/elements-alerts.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True) # ◀ Se inicia el servidor en modo debug para poder ver los errores o cambios en tiempo real.
