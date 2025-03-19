@@ -5,11 +5,17 @@
 
 from flask import app
 from flask import Flask, render_template
+import logging
 
 app = Flask(__name__)
+LOG_FILENAME = 'app.log'
 
 @app.route('/')
 def index():
+    logging.basicConfig(filename=LOG_FILENAME, level=logging.DEBUG)
+    app.logger.debug('Arranque de la aplicacion')
+    app.logger.warning('Advertencia se modifico un archivo')
+    app.logger.error('Error al cargar')
     return render_template('index.html')
 
 if __name__ == '__main__':

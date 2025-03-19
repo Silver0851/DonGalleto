@@ -1,0 +1,10 @@
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2025 18:06:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2025 18:06:50] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2025 18:06:50] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Proyectos\\DonGalleto-1\\app.py', reloading
+DEBUG:app:Arranque de la aplicacion
+WARNING:app:Advertencia se modifico un archivo
+ERROR:app:Error al cargar
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2025 18:07:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2025 18:07:42] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Mar/2025 18:07:42] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
